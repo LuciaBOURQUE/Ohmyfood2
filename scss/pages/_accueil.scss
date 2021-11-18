@@ -1,0 +1,137 @@
+// VERSION MOBILE - en dessous de 420px appliqué ce code
+@media (max-width: 420px) {
+
+.exploration, .functioning, .restaurants {
+    @include layoutsection;
+}
+
+// SECTION 1 - Exploration des restaurants lieu
+.exploration {
+    background-color: $graybackground;
+    &__place {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EAEAEA;
+        padding: 10px 0;
+        input {
+            border: none;
+            padding: 10px 0px 8px 10px;
+            background-color: transparent;
+            &[type="text"] {
+                font-family : $police;
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+        #ville::placeholder {
+            color: black;
+        }
+    }
+    &__h2 {
+        margin-top: 10%;
+        text-align: center;
+        padding: 0 10%;
+    }
+    &__h3 {
+        text-align: center;
+        margin: 0;
+    }
+    button {
+        @include button;
+    }
+}
+
+
+// SECTION 2 - Fonctionnement application
+.functioning {
+    &__h2 {
+        @include h2left;
+    }
+    &__step1, &__step2, &__step3 {
+        width: 80%;
+        margin: 10px 0;
+        border-radius: 20px;
+        background-color: $graybackground;
+        display: flex;
+        align-items: center;
+        box-shadow: $shadow;
+        .step__number {
+            color: white;
+            background-color: $violetcolor;
+            align-items: center;
+            padding: 3px 8px;
+            border-radius: 25px;
+            margin-left: -14px;
+        }
+        .icon {
+            margin-left: 20px;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 1.1em;
+        }
+        .step__step {
+            margin-left: 20px ;
+        }
+    }
+    &__step3 {
+        background-color: rgba(147, 86, 220, 0.1);
+        .icon {
+            color: $violetcolor;
+        }
+    }
+}
+
+
+// SECTION 3 - Listes des restaurants
+.restaurants {
+    background-color: $graybackground;
+    margin-top: 15%;
+    &__h2 {
+        @include h2left;
+    }
+    &__palette-gout, &__note-enchantee,
+    &__la-francaise, &__delice-sens {
+        @include infoscards;
+        width: 90%;
+        margin: 10px 0;
+        .restaurant-image {
+            border-radius: $radiustop;
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+    }
+}
+.restaurant-infos {
+    display: flex;
+    justify-content:space-between;
+    margin: 0 8% 0 5%;
+    border-radius: $radiusbottom;
+    &__title h4 {
+        margin: 10px 0 5px 0;
+    }
+    &__title p {
+        margin: 0 0 15px 0;
+    }
+    &__icon {
+        margin-top: 15px;
+    }
+}
+
+input {
+    display: none;
+    visibility: hidden;
+}
+
+.heart-clik {
+    @include iconheart;
+}
+
+input:checked ~ .heart-clik {
+    @include iconheartdis; 
+}
+
+
+}

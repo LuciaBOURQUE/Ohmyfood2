@@ -1,0 +1,26 @@
+//  Typographies Général
+h1 {
+    font-family : $policeShrikhand ;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+h2 {
+    font-family : $police ;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+h3 {
+    font-family : $police ;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+h4 {
+    font-family : $police ;
+    font-weight: 700; 
+    font-size: 1em;
+}
+p {
+    font-family : $police ;
+    font-weight: 300; // ajouter plutôt 400
+    font-size: 0.9em;
+}

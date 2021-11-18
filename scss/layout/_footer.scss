@@ -1,0 +1,29 @@
+@media (max-width: 420px) {
+
+    footer {
+    background-color: #353535;
+    padding: 5%;
+    margin-top: 30px;
+    .footer-list {
+        list-style-type: none;
+        padding: 0;
+        }
+    }
+
+    .footer-items {
+        margin-top: 10px;
+        .iconinfo {
+            font-size: 0.8em;
+            padding-right: 10px;
+            color: #ffffff;
+        }
+        a {
+            font-family: $police;
+            font-weight: 300;
+            font-size: 0.9em;
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+
+}

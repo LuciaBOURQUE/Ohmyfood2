@@ -1,0 +1,60 @@
+@media (max-width: 420px) {
+// SECTION 2 - Carte du restaurant
+.cardlist {
+    border-radius: 25px 25px 0 0;
+    background-color: $graybackground;
+    padding: 10% 3%;
+    position: relative;
+    margin-top: -25px;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            margin: 0;
+            padding-left: 3%;
+        }
+        .heart {
+            @include iconheart;
+            padding-right: 10%;
+        }
+    }
+    &__titlecard {
+        margin: 40px 0 0 0;
+        padding-left: 3%;
+        font-weight: 300; 
+    }
+    &__line {
+        width: 10%;
+        margin: 1% 0 0 3%;
+        border: 0.13em solid $turquoise;
+    }
+}
+
+.cardlist__items {
+    background-color: white;
+    padding: 4%;
+    margin-top: 15px;
+    @include infoscards;
+    h4 {
+        margin: 0;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        p {
+            margin: 5px 0 0 0;
+        }
+    }
+}
+
+.cardlist__btn {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    button {
+        @include button;
+    }
+}
+
+}
