@@ -125,11 +125,11 @@ input {
     visibility: hidden;
 }
 
-.heart-clik {
+.heart-clik i {
     @include iconheart;
 }
 
-input:checked ~ .heart-clik {
+input:checked ~ .heart-clik i {
     @include iconheartdis; 
 }
 
