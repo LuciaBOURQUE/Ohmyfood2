@@ -130,12 +130,12 @@ p {
     background-color: #EAEAEA;
     padding: 10px 0;
   }
-  .exploration__place input {
+  .exploration__place #ville input {
     border: none;
     padding: 10px 0px 8px 10px;
     background-color: transparent;
   }
-  .exploration__place input[type="text"] {
+  .exploration__place #ville input[type="text"] {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -271,17 +271,16 @@ p {
     -webkit-text-stroke: 1px black;
     padding-top: 15px;
     font-size: 1.2em;
-    background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
   }
   input:checked ~ .heart-clik i {
-    -webkit-text-stroke: 1px transparent;
+    -webkit-text-stroke: 1px -webkit-linear-gradient(#FF79DA, #9356DC);
     padding-top: 15px;
     font-size: 1.2em;
-    background-clip: text;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
     -webkit-background-clip: text;
-    background-color: red;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -312,7 +311,6 @@ p {
     -webkit-text-stroke: 1px black;
     padding-top: 15px;
     font-size: 1.2em;
-    background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
     padding-right: 10%;
