@@ -46,11 +46,13 @@
 
 // SECTION 2 - Fonctionnement application
 .functioning {
+    background-color: white;
+    padding: 20px 0 60px 0;
     &__h2 {
         @include h2left;
     }
     &__step1, &__step2, &__step3 {
-        width: 80%;
+        width: 85%;
         margin: 10px 0;
         border-radius: 20px;
         background-color: $graybackground;
@@ -86,7 +88,7 @@
 // SECTION 3 - Listes des restaurants
 .restaurants {
     background-color: $graybackground;
-    margin-top: 15%;
+    margin-top: 30px;
     &__h2 {
         @include h2left;
     }
