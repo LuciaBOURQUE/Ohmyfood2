@@ -1,4 +1,4 @@
-@media (max-width: 420px) {
+//@media (max-width: 420px) {
 // SECTION 2 - Carte du restaurant
 .cardlist {
     border-radius: 25px 25px 0 0;
@@ -33,6 +33,8 @@
 }
 
 .cardlist__items {
+    cursor: pointer;
+    overflow: hidden;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -58,25 +60,35 @@
     }
 }
 
-
+// Animation: au survol, le Check vert apparait et disparait
 .cardlist__items:hover  {
     & > .cardlist__items__vert {
-       transform: scaleX(1);
+        transform: translateX(0);
+        margin-right: 0;
+        .check {
+            transform: rotate(0deg);
+        }
     }
 }
 .cardlist__items__vert {
+    margin-right: -100px;
     display: flex;
     justify-content: center;
     padding-top: 25px;
-    margin: 0px;
     border-radius: 0 15px 15px 0;
     background-color: $turquoise;
     color: white;
-    width: 65px; 
-    height: 68;
-  transform-origin: 100% 0;
-   transform: scaleX(0);
+    width: 70px; 
+
+    transform-origin: 100% 0;
+    transform: translateX(100px);
     transition: transform 800ms ease-in-out;
+    .check {
+        font-size: 1.3em;
+        height: fit-content;
+        transform: rotate(-360deg);
+        transition: transform 1000ms ease-in-out;
+    }
 }
 
 
@@ -101,4 +113,3 @@
     }
 }
 
-}

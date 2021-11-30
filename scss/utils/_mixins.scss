@@ -43,7 +43,7 @@
 }
 
 @mixin iconheartdis {
-    -webkit-text-stroke: 1px $degrade;
+    -webkit-text-stroke: 1px white;
     padding-top: 15px;
     font-size: 1.2em;
     background: -webkit-gradient(linear, left top, left bottom, from($violetcolor), to($pink));
