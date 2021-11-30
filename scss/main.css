@@ -130,12 +130,12 @@ p {
     background-color: #EAEAEA;
     padding: 10px 0;
   }
-  .exploration__place #ville input {
+  .exploration__place input {
     border: none;
     padding: 10px 0px 8px 10px;
     background-color: transparent;
   }
-  .exploration__place #ville input[type="text"] {
+  .exploration__place input[type="text"] {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -327,16 +327,21 @@ p {
   }
   .cardlist__items {
     background-color: white;
-    padding: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 15px;
     border-radius: 15px;
     -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
             box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
   }
-  .cardlist__items h4 {
+  .cardlist__items__hori {
+    padding: 4%;
+  }
+  .cardlist__items__hori h4 {
     margin: 0;
   }
-  .cardlist__items__info {
+  .cardlist__items__hori__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -344,9 +349,42 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .cardlist__items__info p {
+  .cardlist__items__hori__info p {
     margin: 5px 0 0 0;
   }
+  .cardlist__items__vert {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 25px;
+    margin: 0;
+    position: absolute;
+    border-radius: 0 15px 15px 0;
+    background-color: #99E2D0;
+    color: white;
+    width: 65px;
+    height: 70px;
+  }
+  /*
+.cardlist__items {
+    background-color: white;
+    padding: 4%;
+    margin-top: 15px;
+    @include infoscards;
+    h4 {
+        margin: 0;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        p {
+            margin: 5px 0 0 0;
+        }
+    }
+} */
   .cardlist__btn {
     display: -webkit-box;
     display: -ms-flexbox;
