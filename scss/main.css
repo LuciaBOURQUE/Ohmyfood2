@@ -386,6 +386,14 @@ p {
   margin: 5px 0 0 0;
 }
 
+p {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
+}
+
 .cardlist__items:hover > .cardlist__items__vert {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -395,6 +403,15 @@ p {
 .cardlist__items:hover > .cardlist__items__vert .check {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+.cardlist__items:hover p {
+  width: 220px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
 }
 
 .cardlist__items__vert {
@@ -414,8 +431,8 @@ p {
           transform-origin: 100% 0;
   -webkit-transform: translateX(100px);
           transform: translateX(100px);
-  -webkit-transition: all 800ms ease-in-out;
-  transition: all 800ms ease-in-out;
+  -webkit-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 
 .cardlist__items__vert .check {
@@ -429,39 +446,9 @@ p {
   transition: all 1000ms ease-in;
 }
 
-p {
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-transition: all 800ms ease-in-out;
-  transition: all 800ms ease-in-out;
-}
-
-.cardlist__items :hover ~ .cardlist__items__hori__info > p {
-  width: 220px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 .cardlist__items {
   -webkit-animation: appear-menu 800ms 300ms backwards ease-in-out;
           animation: appear-menu 800ms 300ms backwards ease-in-out;
-}
-
-.cardlist__items--1 {
-  -webkit-animation-delay: 800;
-          animation-delay: 800;
-}
-
-.cardlist__items--2 {
-  -webkit-animation-delay: 1600;
-          animation-delay: 1600;
-}
-
-.cardlist__items--3 {
-  -webkit-animation-delay: 2400;
-          animation-delay: 2400;
 }
 
 .cardlist__items--1 {

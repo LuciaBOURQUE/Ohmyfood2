@@ -59,6 +59,13 @@
     }
 }
 
+p {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 1000ms;
+}
+
 // Animation: au survol, le Check vert apparait et disparait
 .cardlist__items:hover  {
     & > .cardlist__items__vert {
@@ -68,7 +75,15 @@
             transform: rotate(0deg);
         }
     }
+    p {
+        width: 220px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: 1000ms;
+    }
 }
+
 .cardlist__items__vert {
     margin-right: -100px;
     display: flex;
@@ -81,7 +96,7 @@
 
     transform-origin: 100% 0;
     transform: translateX(100px);
-    transition: all 800ms ease-in-out;
+    transition: all 1000ms ease-in-out;
     .check {
         font-size: 1.3em;
         height: fit-content;
@@ -90,29 +105,9 @@
     }
 }
 
-p {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    transition: all 800ms ease-in-out;
-}
-.cardlist__items :hover ~ .cardlist__items__hori__info {
-    & > p {
-    width: 220px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    }
-}
-
 $num-cards: 3;
 .cardlist__items {
     animation: appear-menu 800ms 300ms backwards ease-in-out;
-    @for $i from 1 through $num-cards {
-        &--#{$i} {
-            animation-delay: 800 * $i;
-        }
-    }
 }
 
 .cardlist__items--1 {
@@ -126,7 +121,6 @@ $num-cards: 3;
 .cardlist__items--3 {
     animation-delay: 800ms;
 }
-
 
 @keyframes appear-menu {
     0% {
