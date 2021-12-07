@@ -59,6 +59,10 @@
     }
 }
 
+p {
+    width: 100%;
+    transition: all 800ms ease-in;
+}
 // Animation: au survol, le Check vert apparait et disparait
 .cardlist__items:hover  {
     & > .cardlist__items__vert {
@@ -90,6 +94,19 @@
     }
 }
 
+
+p {
+    width: 100%;
+    transition: all 800ms linear;
+}
+
+.cardlist__items :hover ~ .cardlist__items__hori__info p {
+    border: 1px solid green;
+    width: 220px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
 $num-cards: 3;
 .cardlist__items {
