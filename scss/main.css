@@ -433,6 +433,67 @@ p {
   transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
 }
 
+.cardlist__items {
+  -webkit-animation: appear-menu 800ms 300ms backwards ease-in-out;
+          animation: appear-menu 800ms 300ms backwards ease-in-out;
+}
+
+.cardlist__items--1 {
+  -webkit-animation-delay: 800;
+          animation-delay: 800;
+}
+
+.cardlist__items--2 {
+  -webkit-animation-delay: 1600;
+          animation-delay: 1600;
+}
+
+.cardlist__items--3 {
+  -webkit-animation-delay: 2400;
+          animation-delay: 2400;
+}
+
+.cardlist__items--1 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.cardlist__items--2 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.cardlist__items--3 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+@-webkit-keyframes appear-menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes appear-menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .cardlist__btn {
   display: -webkit-box;
   display: -ms-flexbox;
