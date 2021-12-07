@@ -59,10 +59,6 @@
     }
 }
 
-p {
-    width: 100%;
-    transition: all 800ms ease-in;
-}
 // Animation: au survol, le Check vert apparait et disparait
 .cardlist__items:hover  {
     & > .cardlist__items__vert {
@@ -85,27 +81,28 @@ p {
 
     transform-origin: 100% 0;
     transform: translateX(100px);
-    transition: transform 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
     .check {
         font-size: 1.3em;
         height: fit-content;
         transform: rotate(-360deg);
-        transition: transform 1000ms ease-in-out;
+        transition: all 1000ms ease-in;
     }
 }
 
-
 p {
     width: 100%;
-    transition: all 800ms linear;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 800ms ease-in-out;
 }
-
-.cardlist__items :hover ~ .cardlist__items__hori__info p {
-    border: 1px solid green;
+.cardlist__items :hover ~ .cardlist__items__hori__info {
+    & > p {
     width: 220px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    }
 }
 
 $num-cards: 3;
@@ -141,19 +138,6 @@ $num-cards: 3;
         transform: translateY(0);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .cardlist__btn {
     display: flex;
