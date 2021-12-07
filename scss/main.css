@@ -136,28 +136,6 @@ p {
     background-color: #EAEAEA;
     padding: 10px 0;
   }
-  .exploration__place input {
-    border: none;
-    padding: 10px 0px 8px 10px;
-    background-color: transparent;
-  }
-  .exploration__place input[type="text"] {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-  }
-  .exploration__place #ville::-webkit-input-placeholder {
-    color: black;
-  }
-  .exploration__place #ville:-ms-input-placeholder {
-    color: black;
-  }
-  .exploration__place #ville::-ms-input-placeholder {
-    color: black;
-  }
-  .exploration__place #ville::placeholder {
-    color: black;
-  }
   .exploration__h2 {
     margin-top: 10%;
     text-align: center;
@@ -180,6 +158,28 @@ p {
     padding: 15px 35px;
     -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
             box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+  }
+  .exploration__place input {
+    border: none;
+    padding: 10px 0px 8px 10px;
+    background-color: transparent;
+  }
+  .exploration__place input[type="text"] {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .exploration__place input #ville::-webkit-input-placeholder {
+    color: black;
+  }
+  .exploration__place input #ville:-ms-input-placeholder {
+    color: black;
+  }
+  .exploration__place input #ville::-ms-input-placeholder {
+    color: black;
+  }
+  .exploration__place input #ville::placeholder {
+    color: black;
   }
   .functioning {
     background-color: white;
@@ -223,10 +223,14 @@ p {
   .functioning__step1 .step__step, .functioning__step2 .step__step, .functioning__step3 .step__step {
     margin-left: 20px;
   }
-  .functioning__step3 {
+  .functioning__step1:hover,
+  .functioning__step2:hover,
+  .functioning__step3:hover {
     background-color: rgba(147, 86, 220, 0.1);
   }
-  .functioning__step3 .icon {
+  .functioning__step1:hover .icon,
+  .functioning__step2:hover .icon,
+  .functioning__step3:hover .icon {
     color: #9356DC;
   }
   .restaurants {
@@ -273,24 +277,25 @@ p {
   .restaurant-infos__icon {
     margin-top: 15px;
   }
-  input {
+  .restaurant-infos input {
     display: none;
     visibility: hidden;
   }
-  .heart-clik i {
+  .restaurant-infos .heart-clik i {
     -webkit-text-stroke: 1px black;
     padding-top: 15px;
     font-size: 1.2em;
     color: transparent;
     -webkit-background-clip: text;
   }
-  input:checked ~ .heart-clik i {
-    -webkit-text-stroke: 1px white;
+  .restaurant-infos input:checked ~ .heart-clik i {
+    -webkit-text-stroke: 1px #F6F6F6;
     padding-top: 15px;
     font-size: 1.2em;
     background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 1.35em;
   }
 }
 

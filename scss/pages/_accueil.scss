@@ -15,19 +15,6 @@
         align-items: center;
         background-color: #EAEAEA;
         padding: 10px 0;
-        input {
-            border: none;
-            padding: 10px 0px 8px 10px;
-            background-color: transparent;
-            &[type="text"] {
-                font-family : $police;
-                font-weight: 700;
-                font-size: 18px;
-            }
-        }
-        #ville::placeholder {
-            color: black;
-        }
     }
     &__h2 {
         margin-top: 10%;
@@ -40,6 +27,22 @@
     }
     button {
         @include button;
+    }
+}
+
+.exploration__place {
+    input {
+        border: none;
+        padding: 10px 0px 8px 10px;
+        background-color: transparent;
+        &[type="text"] {
+            font-family : $police;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        #ville::placeholder {
+            color: black;
+        }
     }
 }
 
@@ -76,14 +79,16 @@
             margin-left: 20px ;
         }
     }
-    &__step3 {
-        background-color: rgba(147, 86, 220, 0.1);
-        .icon {
-            color: $violetcolor;
-        }
-    }
 }
 
+.functioning__step1:hover,
+.functioning__step2:hover,
+.functioning__step3:hover {
+    background-color: rgba(147, 86, 220, 0.1);
+    .icon {
+        color: $violetcolor;
+    }
+}
 
 // SECTION 3 - Listes des restaurants
 .restaurants {
@@ -122,18 +127,18 @@
     }
 }
 
-input {
-    display: none;
-    visibility: hidden;
+.restaurant-infos {
+    input {
+        display: none;
+        visibility: hidden;
+    } 
+    .heart-clik i {
+        @include iconheart;
+    }
+    input:checked ~ .heart-clik i {
+        @include iconheartdis; 
+        font-size: 1.35em;
+    }
 }
-
-.heart-clik i {
-    @include iconheart;
-}
-
-input:checked ~ .heart-clik i {
-    @include iconheartdis; 
-}
-
 
 }
