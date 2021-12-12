@@ -1,6 +1,4 @@
-// VERSION MOBILE - en dessous de 420px appliqué ce code
-@media (max-width: 420px) {
-
+// Animation spinner-loading démarrage Page d'accueil
 .preloader {
  display: flex;
  justify-content: center;
@@ -46,21 +44,12 @@
     }
 }
 
-/*
- .loader {
-//     position: absolute;
-     display: inline-block;
-     vertical-align: middle;
-     animation: rotation 1s linear infinite;
- }
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-}*/
-
 .exploration, .functioning, .restaurants {
     @include layoutsection;
 }
+
+// VERSION MOBILE - en dessous de 420px appliqué ce code
+// @media (max-width: 420px) {
 
 // SECTION 1 - Exploration des restaurants lieu
 .exploration {
@@ -103,6 +92,27 @@
     }
 }
 
+// VERSION TABLETTE - En dessous de 992px jusqu'à 768px on applique ses instrcutions
+@media (max-width:1500px) and (min-width:768px) {
+    .exploration {
+        &__h2 {
+            margin-top: 5%;
+        }
+        button {
+            margin: 3% 0 5% 0;
+        }
+    }
+}
+
+// VERSION DESKTOP - En dessous de 992px jusqu'à 768px on applique ses instrcutions
+@media (max-width:1920px) and (min-width:992px) {
+    .functioning {
+        &__step1, &__step2, &__step3 {
+            width: 40%;
+            display: flex;
+        }
+    }
+}
 
 // SECTION 2 - Fonctionnement application
 .functioning {
@@ -198,4 +208,4 @@
     }
 }
 
-}
+//}

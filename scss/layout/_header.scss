@@ -1,20 +1,16 @@
-@media (max-width: 420px) {
+.main-nav, .main-nav-card {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+  }
 
-    .main-nav, .main-nav-card {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    padding: 20px 20px 20px 20px;
-    }
+.main-nav {
+  justify-content: center;
+}
 
-    .main-nav {
-      justify-content: center;
-    }
-
-    #logo_ohmyfood {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-  
+#logo_ohmyfood {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
