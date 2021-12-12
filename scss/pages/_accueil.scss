@@ -1,4 +1,8 @@
-// Animation spinner-loading démarrage Page d'accueil
+
+// VERSION MOBILE - en dessous de 420px appliqué ce code
+// @media (max-width: 420px) {
+
+// Animation "spinner-loading" démarrage Page d'accueil
 .preloader {
  display: flex;
  justify-content: center;
@@ -44,14 +48,10 @@
     }
 }
 
+// SECTION 1 - Exploration des restaurants lieu
 .exploration, .functioning, .restaurants {
     @include layoutsection;
 }
-
-// VERSION MOBILE - en dessous de 420px appliqué ce code
-// @media (max-width: 420px) {
-
-// SECTION 1 - Exploration des restaurants lieu
 .exploration {
     background-color: $graybackground;
     &__place {
@@ -92,28 +92,6 @@
     }
 }
 
-// VERSION TABLETTE - En dessous de 992px jusqu'à 768px on applique ses instrcutions
-@media (max-width:1500px) and (min-width:768px) {
-    .exploration {
-        &__h2 {
-            margin-top: 5%;
-        }
-        button {
-            margin: 3% 0 5% 0;
-        }
-    }
-}
-
-// VERSION DESKTOP - En dessous de 992px jusqu'à 768px on applique ses instrcutions
-@media (max-width:1920px) and (min-width:992px) {
-    .functioning {
-        &__step1, &__step2, &__step3 {
-            width: 40%;
-            display: flex;
-        }
-    }
-}
-
 // SECTION 2 - Fonctionnement application
 .functioning {
     background-color: white;
@@ -121,36 +99,38 @@
     &__h2 {
         @include h2left;
     }
-    &__step1, &__step2, &__step3 {
+    &__list {
         width: 85%;
-        margin: 10px 0;
-        border-radius: 20px;
-        background-color: $graybackground;
-        display: flex;
-        align-items: center;
-        box-shadow: $shadow;
-        .step__number {
-            color: white;
-            background-color: $violetcolor;
-            align-items: center;
-            padding: 3px 8px;
-            border-radius: 25px;
-            margin-left: -14px;
-        }
-        .icon {
-            margin-left: 20px;
-            color: rgba(0, 0, 0, 0.5);
-            font-size: 1.1em;
-        }
-        .step__step {
-            margin-left: 20px ;
+        &__step1, &__step2, &__step3 {
+                margin: 10px 0;
+                border-radius: 20px;
+                background-color: $graybackground;
+                display: flex;
+                align-items: center;
+                box-shadow: $shadow;
+                .step__number {
+                    color: white;
+                    background-color: $violetcolor;
+                    align-items: center;
+                    padding: 3px 8px;
+                    border-radius: 25px;
+                    margin-left: -14px;
+                }
+                .icon {
+                    margin-left: 20px;
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 1.1em;
+                }
+                .step__step {
+                    margin-left: 20px ;
+                }
         }
     }
 }
 
-.functioning__step1:hover,
-.functioning__step2:hover,
-.functioning__step3:hover {
+.functioning__list__step1:hover,
+.functioning__list__step2:hover,
+.functioning__list__step3:hover {
     background-color: rgba(147, 86, 220, 0.1);
     .icon {
         color: $violetcolor;
@@ -209,3 +189,32 @@
 }
 
 //}
+
+// VERSION TABLETTE - En dessous de 992px jusqu'à 768px on applique ses instrcutions
+/*@media (max-width:1500px) and (min-width:768px) {
+}*/
+
+// VERSION DESKTOP - En dessous de 992px jusqu'à 768px on applique ses instrcutions
+@media (max-width:1920px) and (min-width:768px) {
+    .exploration {
+        &__h2 {
+            margin-top: 5%;
+        }
+        button {
+            margin: 3% 0 5% 0;
+        }
+    }
+}
+
+@media (max-width:1920px) and (min-width:1060px) {
+    .functioning {
+        &__list {
+           display: flex;
+           justify-content: space-between;
+           &__step1, &__step2, &__step3 {
+               width: 80%;
+               margin-right:5%;
+           }
+        }
+    }
+}

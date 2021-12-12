@@ -284,24 +284,6 @@ p {
   color: black;
 }
 
-@media (max-width: 1500px) and (min-width: 768px) {
-  .exploration__h2 {
-    margin-top: 5%;
-  }
-  .exploration button {
-    margin: 3% 0 5% 0;
-  }
-}
-
-@media (max-width: 1920px) and (min-width: 992px) {
-  .functioning__step1, .functioning__step2, .functioning__step3 {
-    width: 40%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 .functioning {
   background-color: white;
   padding: 20px 0 60px 0;
@@ -314,8 +296,11 @@ p {
   width: 90%;
 }
 
-.functioning__step1, .functioning__step2, .functioning__step3 {
+.functioning__list {
   width: 85%;
+}
+
+.functioning__list__step1, .functioning__list__step2, .functioning__list__step3 {
   margin: 10px 0;
   border-radius: 20px;
   background-color: #F6F6F6;
@@ -329,7 +314,7 @@ p {
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
 }
 
-.functioning__step1 .step__number, .functioning__step2 .step__number, .functioning__step3 .step__number {
+.functioning__list__step1 .step__number, .functioning__list__step2 .step__number, .functioning__list__step3 .step__number {
   color: white;
   background-color: #9356DC;
   -webkit-box-align: center;
@@ -340,25 +325,25 @@ p {
   margin-left: -14px;
 }
 
-.functioning__step1 .icon, .functioning__step2 .icon, .functioning__step3 .icon {
+.functioning__list__step1 .icon, .functioning__list__step2 .icon, .functioning__list__step3 .icon {
   margin-left: 20px;
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.1em;
 }
 
-.functioning__step1 .step__step, .functioning__step2 .step__step, .functioning__step3 .step__step {
+.functioning__list__step1 .step__step, .functioning__list__step2 .step__step, .functioning__list__step3 .step__step {
   margin-left: 20px;
 }
 
-.functioning__step1:hover,
-.functioning__step2:hover,
-.functioning__step3:hover {
+.functioning__list__step1:hover,
+.functioning__list__step2:hover,
+.functioning__list__step3:hover {
   background-color: rgba(147, 86, 220, 0.1);
 }
 
-.functioning__step1:hover .icon,
-.functioning__step2:hover .icon,
-.functioning__step3:hover .icon {
+.functioning__list__step1:hover .icon,
+.functioning__list__step2:hover .icon,
+.functioning__list__step3:hover .icon {
   color: #9356DC;
 }
 
@@ -435,6 +420,32 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.35em;
+}
+
+/*@media (max-width:1500px) and (min-width:768px) {
+}*/
+@media (max-width: 1920px) and (min-width: 768px) {
+  .exploration__h2 {
+    margin-top: 5%;
+  }
+  .exploration button {
+    margin: 3% 0 5% 0;
+  }
+}
+
+@media (max-width: 1920px) and (min-width: 1060px) {
+  .functioning__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .functioning__list__step1, .functioning__list__step2, .functioning__list__step3 {
+    width: 80%;
+    margin-right: 5%;
+  }
 }
 
 .cardlist {
