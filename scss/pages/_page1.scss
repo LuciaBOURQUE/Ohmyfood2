@@ -113,15 +113,12 @@ $num-cards: 3;
 .cardlist__items {
     animation: appear-menu 800ms 300ms backwards ease-in-out;
 }
-
 .cardlist__items--1 {
     animation-delay: 400ms;
 }
-
 .cardlist__items--2 {
     animation-delay: 600ms;
 }
-
 .cardlist__items--3 {
     animation-delay: 800ms;
 }
@@ -150,22 +147,32 @@ $num-cards: 3;
 @media (max-width:1920px) and (min-width:1000px) {
     .photo { // à revoir
         border: 1px solid green;
-        width: 40%;
+        height: 50%;
     }
     .cardlist {
-        padding: 5% 10% 2% 10%;
-    //    margin-top: -500px;
-        &__items {
-        width: 40%;
+        padding: 5% 3% 0 3%;
+        margin-top: -400px;
+        &__title {
+            width: 300px;
+            padding-left: 20px;
         }
     }
-    .cardlist__items__hori {
-        border: 1px solid green;
-        width: 80%;
+    .cardlist__section {
+        display: flex;
+        justify-content: space-between;
+        &__entree, &__plat, &__dessert {
+            margin-left: 20px;
+            width: 100%;
+        }
+    }
+    .cardlist__btn {
+        button {
+            margin: 40px 0;
+        }
     }
 }
 
-@media (max-width:1000px) and (min-width:400px) {
+@media (max-width:1000px) and (min-width:500px) {
     .cardlist {
         padding: 5% 10% 2% 10%;
         margin-top: -100px;

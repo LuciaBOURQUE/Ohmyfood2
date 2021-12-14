@@ -108,12 +108,17 @@
                 align-items: center;
                 box-shadow: $shadow;
                 .step__number {
+                    width: 25px;
+                    height: 25px;
                     color: white;
                     background-color: $violetcolor;
-                    align-items: center;
-                    padding: 3px 8px;
                     border-radius: 25px;
                     margin-left: -14px;
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
                 .icon {
                     margin-left: 20px;
@@ -121,7 +126,7 @@
                     font-size: 1.1em;
                 }
                 .step__step {
-                    margin-left: 20px ;
+                    margin-left: 20px;
                 }
         }
     }

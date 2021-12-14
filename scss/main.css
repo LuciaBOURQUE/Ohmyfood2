@@ -23,31 +23,31 @@ h1 {
 }
 
 h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.5em;
 }
 
 h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.1em;
 }
 
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1em;
 }
 
 h5 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.9em;
 }
 
 p {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 0.9em;
 }
@@ -95,7 +95,7 @@ footer .footer-list {
 }
 
 .footer-items a {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 0.9em;
   text-decoration: none;
@@ -260,14 +260,14 @@ footer .footer-list {
   cursor: pointer;
   border: none;
   border-radius: 30px;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  font-family: "Raleway", sans-serif;
+  background: -webkit-linear-gradient(-70deg, #FF79DA, #9356DC);
+  font-family: "Roboto", sans-serif;
   color: #F6F6F6;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1em;
   text-align: center;
   margin: 8% 0 10% 0;
-  padding: 15px 35px;
+  padding: 15px 22px;
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
 }
@@ -279,7 +279,7 @@ footer .footer-list {
 }
 
 .exploration__place input[type="text"] {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
 }
@@ -328,14 +328,24 @@ footer .footer-list {
 }
 
 .functioning__list__step1 .step__number, .functioning__list__step2 .step__number, .functioning__list__step3 .step__number {
+  width: 25px;
+  height: 25px;
   color: white;
   background-color: #9356DC;
+  border-radius: 25px;
+  margin-left: -14px;
+}
+
+.functioning__list__step1 .step__number p, .functioning__list__step2 .step__number p, .functioning__list__step3 .step__number p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3px 8px;
-  border-radius: 25px;
-  margin-left: -14px;
 }
 
 .functioning__list__step1 .icon, .functioning__list__step2 .icon, .functioning__list__step3 .icon {
@@ -709,14 +719,14 @@ p {
   cursor: pointer;
   border: none;
   border-radius: 30px;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  font-family: "Raleway", sans-serif;
+  background: -webkit-linear-gradient(-70deg, #FF79DA, #9356DC);
+  font-family: "Roboto", sans-serif;
   color: #F6F6F6;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1em;
   text-align: center;
   margin: 8% 0 10% 0;
-  padding: 15px 35px;
+  padding: 15px 22px;
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
   margin: 8% 0 0 0;
@@ -725,21 +735,34 @@ p {
 @media (max-width: 1920px) and (min-width: 1000px) {
   .photo {
     border: 1px solid green;
-    width: 40%;
+    height: 50%;
   }
   .cardlist {
-    padding: 5% 10% 2% 10%;
+    padding: 5% 3% 0 3%;
+    margin-top: -400px;
   }
-  .cardlist__items {
-    width: 40%;
+  .cardlist__title {
+    width: 300px;
+    padding-left: 20px;
   }
-  .cardlist__items__hori {
-    border: 1px solid green;
-    width: 80%;
+  .cardlist__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cardlist__section__entree, .cardlist__section__plat, .cardlist__section__dessert {
+    margin-left: 20px;
+    width: 100%;
+  }
+  .cardlist__btn button {
+    margin: 40px 0;
   }
 }
 
-@media (max-width: 1000px) and (min-width: 400px) {
+@media (max-width: 1000px) and (min-width: 500px) {
   .cardlist {
     padding: 5% 10% 2% 10%;
     margin-top: -100px;
