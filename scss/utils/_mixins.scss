@@ -1,4 +1,4 @@
-@mixin header {
+@mixin header { // Ou se situe ce mixin ?
     background-color: white;
     display: flex;
     box-shadow: $shadow;
@@ -23,11 +23,6 @@
     margin: 8% 0 10% 0;
     padding: 15px 35px;
     box-shadow: $shadow;
-}
-
-@mixin h2left {
-    display: flex;
-    width: 90%;
 }
 
 @mixin infoscards {

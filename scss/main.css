@@ -63,12 +63,6 @@ p {
   padding: 20px 20px 20px 20px;
 }
 
-.main-nav {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 #logo_ohmyfood {
   width: 100%;
   display: -webkit-box;
@@ -127,20 +121,23 @@ footer .footer-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: white;
-  color: red;
+  color: #9356DC;
   font-size: 1.5em;
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
   -webkit-animation: loading-spinner 3000ms 200ms both;
           animation: loading-spinner 3000ms 200ms both;
 }
@@ -305,18 +302,15 @@ footer .footer-list {
 
 .functioning {
   background-color: white;
-  padding: 20px 0 60px 0;
+  padding: 25px 0 60px 0;
 }
 
 .functioning__h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 90%;
 }
 
 .functioning__list {
-  width: 85%;
+  width: 88%;
 }
 
 .functioning__list__step1, .functioning__list__step2, .functioning__list__step3 {
@@ -372,9 +366,6 @@ footer .footer-list {
 }
 
 .restaurants__h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 90%;
 }
 
@@ -386,14 +377,13 @@ footer .footer-list {
   border-radius: 15px;
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .restaurants__cards__palette-gout .restaurant-image, .restaurants__cards__note-enchantee .restaurant-image, .restaurants__cards__la-francaise .restaurant-image, .restaurants__cards__delice-sens .restaurant-image {
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 180px;
-  overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -415,10 +405,6 @@ footer .footer-list {
 
 .restaurant-infos__title p {
   margin: 0 0 15px 0;
-}
-
-.restaurant-infos__icon {
-  margin-top: 15px;
 }
 
 .restaurant-infos input {
@@ -504,7 +490,7 @@ footer .footer-list {
   background-color: #F6F6F6;
   padding: 10% 3%;
   position: relative;
-  margin-top: -25px;
+  margin-top: -53px;
 }
 
 .cardlist__title {
@@ -530,20 +516,31 @@ footer .footer-list {
   font-size: 1.2em;
   color: transparent;
   -webkit-background-clip: text;
-  padding-right: 10%;
+  padding: 0 5% 0 0;
+  font-size: 1.4em;
 }
 
 .cardlist__titlecard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cardlist__titlecard__title {
   margin: 40px 0 0 0;
   padding-left: 3%;
   font-weight: 300;
 }
 
-.cardlist__line {
+.cardlist__titlecard__line {
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
-  margin: 5px 0 0 10px;
+  margin: 5px 0 0 3%;
 }
 
 .cardlist__items {
@@ -627,11 +624,13 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
   color: white;
-  width: 70px;
+  width: 25%;
   -webkit-transform-origin: 100% 0;
           transform-origin: 100% 0;
   -webkit-transform: translateX(100px);
@@ -721,5 +720,15 @@ p {
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
   margin: 8% 0 0 0;
+}
+
+@media (max-width: 1920px) and (min-width: 400px) {
+  .cardlist {
+    padding: 5% 10% 2% 10%;
+    margin-top: -100px;
+  }
+  .cardlist__items__vert .check {
+    font-size: 1.7em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

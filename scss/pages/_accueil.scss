@@ -1,16 +1,17 @@
 // Animation "Loader-spinner" démarrage Home
 .preloader { // Demander pour qu'il soit entièrement sur la page
  display: flex;
+ flex-direction: column;
  justify-content: center;
  align-items: center;
+ justify-items: center;
  position: absolute;
  // z-index: 1;
  height: 100%;
  width: 100%;
  background-color: white;
- color: red;
+ color: $violetcolor;
  font-size: 1.5em;
- transform-origin: center center;
  animation: loading-spinner 3000ms 200ms both;
   .loader {
       animation: spinner 600ms linear infinite;
@@ -93,12 +94,12 @@
 // SECTION 2 - Fonctionnement application
 .functioning {
     background-color: white;
-    padding: 20px 0 60px 0;
+    padding: 25px 0 60px 0;
     &__h2 {
-        @include h2left;
+        width: 90%;
     }
     &__list {
-        width: 85%;
+        width: 88%;
         &__step1, &__step2, &__step3 {
                 margin: 10px 0;
                 border-radius: 20px;
@@ -135,24 +136,24 @@
     }
 }
 
-// SECTION 3 - Listes des restaurants
+// SECTION 3 - Liste des restaurants
 .restaurants {
     background-color: $graybackground;
     margin-top: 30px;
     &__h2 {
-        @include h2left;
+        width: 90%;
     }
     &__cards {
         width: 90%;
         &__palette-gout, &__note-enchantee,
         &__la-francaise, &__delice-sens {
             @include infoscards;
-            margin: 10px 0;
+            margin: 20px 0;
             .restaurant-image {
                 border-radius: $radiustop;
                 width: 100%;
                 height: 180px;
-                overflow: hidden;
+            //    overflow: hidden;
                 object-fit: cover;
             }
         }
@@ -168,9 +169,6 @@
     }
     &__title p {
         margin: 0 0 15px 0;
-    }
-    &__icon {
-        margin-top: 15px;
     }
 }
 
@@ -188,7 +186,7 @@
     }
 }
 
-// VERSION DESKTOP et TABLETTE
+// ÉLABORATION DES MEDIA QUERIES
 @media (max-width:1920px) and (min-width:600px) {
     .exploration {
         &__h2 {
@@ -210,7 +208,6 @@
         }
     }
 }
-
 @media (max-width:1920px) and (min-width:1060px) {
     .functioning {
         &__list {
@@ -223,8 +220,6 @@
         }
     }
 }
-
-// VERSION DESKTOP LARGE
 @media (max-width:1920px) and (min-width:1400px) {
     .restaurants {
         &__cards {

@@ -1,11 +1,10 @@
-//@media (max-width: 420px) {
 // SECTION 2 - Carte du restaurant
 .cardlist {
     border-radius: 25px 25px 0 0;
     background-color: $graybackground;
     padding: 10% 3%;
     position: relative;
-    margin-top: -25px;
+    margin-top: -53px;
     &__title {
         display: flex;
         justify-content: space-between;
@@ -16,19 +15,24 @@
         }
         .heart {
             @include iconheart;
-            padding-right: 10%;
+            padding: 0 5% 0 0;
+            font-size: 1.4em;
         }
     }
     &__titlecard {
-        margin: 40px 0 0 0;
-        padding-left: 3%;
-        font-weight: 300; 
-    }
-    &__line {
-        width: 40px;
-        height: 3px ;
-        background-color: $turquoise;
-        margin: 5px 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        &__title {
+            margin: 40px 0 0 0;
+            padding-left: 3%;
+            font-weight: 300; 
+        }
+        &__line {
+            width: 40px;
+            height: 3px ;
+            background-color: $turquoise;
+            margin: 5px 0 0 3%;
+        }
     }
 }
 
@@ -88,11 +92,11 @@ p {
     margin-right: -100px;
     display: flex;
     justify-content: center;
-    padding-top: 25px;
+    align-items: center;
     border-radius: 0 15px 15px 0;
     background-color: $turquoise;
     color: white;
-    width: 70px; 
+    width: 25%; 
 
     transform-origin: 100% 0;
     transform: translateX(100px);
@@ -139,5 +143,18 @@ $num-cards: 3;
     button {
         @include button;
         margin: 8% 0 0 0;
+    }
+}
+
+// ÉLABORATION DES MEDIA QUERIES
+@media (max-width:1920px) and (min-width:400px) {
+    .cardlist {
+        padding: 5% 10% 2% 10%;
+        margin-top: -100px;
+    }
+    .cardlist__items__vert {
+        .check {
+            font-size: 1.7em;
+        }
     }
 }
