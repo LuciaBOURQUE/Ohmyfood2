@@ -11,6 +11,7 @@
 }
 
 @mixin button {
+    cursor: pointer;
     border: none;
     border-radius: 30px;
     background: $degrade;

@@ -1,6 +1,4 @@
-@media (max-width: 420px) {
-
-    footer {
+footer {
     background-color: #353535;
     padding: 5%;
     margin-top: 30px;
@@ -10,20 +8,29 @@
         }
     }
 
-    .footer-items {
-        margin-top: 10px;
-        .iconinfo {
-            font-size: 0.8em;
-            padding-right: 10px;
-            color: #ffffff;
-        }
-        a {
-            font-family: $police;
-            font-weight: 300;
-            font-size: 0.9em;
-            text-decoration: none;
-            color: #ffffff;
-        }
+.footer-items {
+    margin-top: 10px;
+    .iconinfo {
+        font-size: 0.8em;
+        padding-right: 10px;
+        color: #ffffff;
     }
+    a {
+        font-family: $police;
+        font-weight: 300;
+        font-size: 0.9em;
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
 
+@media (max-width:1920px) and (min-width:600px) {
+    footer {
+        padding: 20px 40px;
+    }
+    .footer-list {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
