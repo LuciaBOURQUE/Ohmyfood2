@@ -52,6 +52,76 @@ p {
   font-size: 1em;
 }
 
+/* Bouton "Explorer nos restaurants" */
+.exploration button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background: -webkit-linear-gradient(-70deg, #FF79DA, #9356DC);
+  font-family: "Roboto", sans-serif;
+  color: #F6F6F6;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  margin: 8% 0 10% 0;
+  padding: 15px 22px;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon coeur "on click" like/dislike */
+.restaurant-infos input {
+  display: none;
+  visibility: hidden;
+}
+
+.restaurant-infos .heart-clik i {
+  cursor: pointer;
+  -webkit-text-stroke: 1px black;
+  padding-top: 15px;
+  font-size: 1.2em;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.restaurant-infos input:checked ~ .heart-clik i {
+  cursor: pointer;
+  -webkit-text-stroke: 1px #F6F6F6;
+  padding-top: 15px;
+  font-size: 1.2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.35em;
+}
+
+/* Bouton "Commander" */
+.cardlist__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cardlist__btn button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background: -webkit-linear-gradient(-70deg, #FF79DA, #9356DC);
+  font-family: "Roboto", sans-serif;
+  color: #F6F6F6;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  margin: 8% 0 10% 0;
+  padding: 15px 22px;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+  margin: 8% 0 0 0;
+}
+
 .main-nav, .main-nav-card {
   background-color: white;
   display: -webkit-box;
@@ -61,6 +131,10 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 20px 20px 20px;
+}
+
+.main-nav-card .left {
+  font-size: 1.3em;
 }
 
 #logo_ohmyfood {
@@ -132,7 +206,7 @@ footer .footer-list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f19797;
+  background-color: white;
   height: 100%;
   width: 100%;
   color: #9356DC;
@@ -144,7 +218,8 @@ footer .footer-list {
 .preloader p {
   font-size: 0.8em;
   text-align: center;
-  color: white;
+  color: #9356DC;
+  font-weight: 400;
 }
 
 .preloader .loader {
@@ -248,6 +323,7 @@ footer .footer-list {
           align-items: center;
   background-color: #EAEAEA;
   padding: 10px 0;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .exploration__h2 {
@@ -259,22 +335,6 @@ footer .footer-list {
 .exploration__h3 {
   text-align: center;
   margin: 0;
-}
-
-.exploration button {
-  cursor: pointer;
-  border: none;
-  border-radius: 30px;
-  background: -webkit-linear-gradient(-70deg, #FF79DA, #9356DC);
-  font-family: "Roboto", sans-serif;
-  color: #F6F6F6;
-  font-weight: 400;
-  font-size: 1em;
-  text-align: center;
-  margin: 8% 0 10% 0;
-  padding: 15px 22px;
-  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
-          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
 }
 
 .exploration__place input {
@@ -319,6 +379,7 @@ footer .footer-list {
 }
 
 .functioning__list__step1, .functioning__list__step2, .functioning__list__step3 {
+  cursor: pointer;
   margin: 14px 0;
   border-radius: 20px;
   background-color: #F6F6F6;
@@ -425,29 +486,6 @@ footer .footer-list {
   margin: 0 0 15px 0;
 }
 
-.restaurant-infos input {
-  display: none;
-  visibility: hidden;
-}
-
-.restaurant-infos .heart-clik i {
-  -webkit-text-stroke: 1px black;
-  padding-top: 15px;
-  font-size: 1.2em;
-  color: transparent;
-  -webkit-background-clip: text;
-}
-
-.restaurant-infos input:checked ~ .heart-clik i {
-  -webkit-text-stroke: 1px #F6F6F6;
-  padding-top: 15px;
-  font-size: 1.2em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.35em;
-}
-
 .restaurant-new {
   position: absolute;
   top: 10px;
@@ -490,6 +528,12 @@ footer .footer-list {
 }
 
 @media (max-width: 1920px) and (min-width: 1060px) {
+  .exploration__h2 {
+    font-size: 2.3em;
+  }
+  .exploration__h3 {
+    font-size: 1.8em;
+  }
   .functioning__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -548,6 +592,7 @@ footer .footer-list {
 }
 
 .cardlist__title .heart {
+  cursor: pointer;
   -webkit-text-stroke: 1px black;
   padding-top: 15px;
   font-size: 1.2em;
@@ -733,32 +778,6 @@ p {
   }
 }
 
-.cardlist__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.cardlist__btn button {
-  cursor: pointer;
-  border: none;
-  border-radius: 30px;
-  background: -webkit-linear-gradient(-70deg, #FF79DA, #9356DC);
-  font-family: "Roboto", sans-serif;
-  color: #F6F6F6;
-  font-weight: 400;
-  font-size: 1em;
-  text-align: center;
-  margin: 8% 0 10% 0;
-  padding: 15px 22px;
-  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
-          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
-  margin: 8% 0 0 0;
-}
-
 @media (max-width: 1920px) and (min-width: 1000px) {
   .photo {
     border: 1px solid green;
@@ -766,10 +785,10 @@ p {
   }
   .cardlist {
     padding: 5% 3% 0 3%;
-    margin-top: -400px;
+    margin-top: -450px;
   }
   .cardlist__title {
-    width: 300px;
+    width: 350px;
     padding-left: 20px;
   }
   .cardlist__section {

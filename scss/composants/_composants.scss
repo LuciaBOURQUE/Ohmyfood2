@@ -1,0 +1,33 @@
+// PAGE ACCUEIL
+/* Bouton "Explorer nos restaurants" */
+.exploration {
+    button {
+        @include button;
+    }
+}
+
+/* Icon coeur "on click" like/dislike */
+.restaurant-infos {
+    input {
+        display: none;
+        visibility: hidden;
+    } 
+    .heart-clik i {
+        @include iconheart;
+    }
+    input:checked ~ .heart-clik i {
+        @include iconheartdis; 
+        font-size: 1.35em;
+    }
+}
+
+// PAGE CARTE RESTAURANTS
+/* Bouton "Commander" */
+.cardlist__btn {
+    display: flex;
+    justify-content: center;
+    button {
+        @include button;
+        margin: 8% 0 0 0;
+    }
+}

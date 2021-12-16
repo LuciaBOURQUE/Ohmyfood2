@@ -134,26 +134,17 @@ $num-cards: 3;
     }
 }
 
-.cardlist__btn {
-    display: flex;
-    justify-content: center;
-    button {
-        @include button;
-        margin: 8% 0 0 0;
-    }
-}
-
 // ÉLABORATION DES MEDIA QUERIES
 @media (max-width:1920px) and (min-width:1000px) {
-    .photo { // à revoir
+    .photo {
         border: 1px solid green;
         height: 50%;
     }
     .cardlist {
         padding: 5% 3% 0 3%;
-        margin-top: -400px;
+        margin-top: -450px;
         &__title {
-            width: 300px;
+            width: 350px;
             padding-left: 20px;
         }
     }
@@ -171,7 +162,6 @@ $num-cards: 3;
         }
     }
 }
-
 @media (max-width:1000px) and (min-width:500px) {
     .cardlist {
         padding: 5% 10% 2% 10%;
