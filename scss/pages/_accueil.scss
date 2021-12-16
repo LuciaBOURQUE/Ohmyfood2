@@ -1,18 +1,21 @@
 // Animation "Loader-spinner" démarrage Home
-.preloader { // Demander pour qu'il soit entièrement sur la page
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- justify-items: center;
- position: absolute;
- // z-index: 1;
- height: 100%;
- width: 100%;
- background-color: white;
- color: $violetcolor;
- font-size: 1.5em;
- animation: loading-spinner 3000ms 200ms both;
+.preloader {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 151, 151);
+    height: 100%;
+    width: 100%;
+    color: $violetcolor;
+    font-size: 1.5em;
+    animation: loading-spinner 3000ms 200ms both;
+    p {
+        font-size: 0.8em;
+        text-align: center;
+        color: white;
+    }
   .loader {
       animation: spinner 600ms linear infinite;
     }
@@ -101,33 +104,38 @@
     &__list {
         width: 88%;
         &__step1, &__step2, &__step3 {
-                margin: 10px 0;
-                border-radius: 20px;
-                background-color: $graybackground;
-                display: flex;
-                align-items: center;
-                box-shadow: $shadow;
-                .step__number {
-                    width: 25px;
-                    height: 25px;
-                    color: white;
-                    background-color: $violetcolor;
-                    border-radius: 25px;
-                    margin-left: -14px;
-                    p {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                }
-                .icon {
-                    margin-left: 20px;
-                    color: rgba(0, 0, 0, 0.5);
-                    font-size: 1.1em;
-                }
-                .step__step {
-                    margin-left: 20px;
-                }
+            margin: 14px 0;
+            border-radius: 20px;
+            background-color: $graybackground;
+            display: flex;
+            align-items: center;
+            box-shadow: $shadow;
+        }
+        .icon {
+            margin-left: 20px;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 1.1em;
+        }
+        .step__step {
+            margin-left: 25px;
+        }
+    }
+}
+
+.functioning__list__step1,
+.functioning__list__step2,
+.functioning__list__step3{
+    .step__number {
+        display: flex;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        color: white;
+        background-color: $violetcolor;
+        border-radius: 25px;
+        margin-left: -14px;
+        p {
+            margin: 2px 0 0 8px;
         }
     }
 }
@@ -152,6 +160,7 @@
         width: 90%;
         &__palette-gout, &__note-enchantee,
         &__la-francaise, &__delice-sens {
+            position: relative;
             @include infoscards;
             margin: 20px 0;
             .restaurant-image {
@@ -164,6 +173,7 @@
         }
     }
 }
+
 .restaurant-infos {
     display: flex;
     justify-content:space-between;
@@ -188,6 +198,22 @@
     input:checked ~ .heart-clik i {
         @include iconheartdis; 
         font-size: 1.35em;
+    }
+}
+
+.restaurant-new {
+    position: absolute;
+    top: 10px; right: 10px;
+    border-radius: 3px;
+    width: 100px;
+    background-color: $turquoise;
+    color: #139273;
+    box-shadow: $shadow;
+    p {
+        margin: 0;
+        font-weight: 500;
+        text-align: center;
+        padding: 7px 0;
     }
 }
 

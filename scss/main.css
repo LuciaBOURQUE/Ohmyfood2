@@ -25,19 +25,19 @@ h1 {
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 h4 {
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 1em;
+  font-weight: 500;
+  font-size: 1.1em;
 }
 
 h5 {
@@ -49,7 +49,7 @@ h5 {
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .main-nav, .main-nav-card {
@@ -118,28 +118,33 @@ footer .footer-list {
 }
 
 .preloader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: absolute;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
-  position: absolute;
+  background-color: #f19797;
   height: 100%;
   width: 100%;
-  background-color: white;
   color: #9356DC;
   font-size: 1.5em;
   -webkit-animation: loading-spinner 3000ms 200ms both;
           animation: loading-spinner 3000ms 200ms both;
+}
+
+.preloader p {
+  font-size: 0.8em;
+  text-align: center;
+  color: white;
 }
 
 .preloader .loader {
@@ -314,7 +319,7 @@ footer .footer-list {
 }
 
 .functioning__list__step1, .functioning__list__step2, .functioning__list__step3 {
-  margin: 10px 0;
+  margin: 14px 0;
   border-radius: 20px;
   background-color: #F6F6F6;
   display: -webkit-box;
@@ -327,7 +332,25 @@ footer .footer-list {
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
 }
 
-.functioning__list__step1 .step__number, .functioning__list__step2 .step__number, .functioning__list__step3 .step__number {
+.functioning__list .icon {
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.1em;
+}
+
+.functioning__list .step__step {
+  margin-left: 25px;
+}
+
+.functioning__list__step1 .step__number,
+.functioning__list__step2 .step__number,
+.functioning__list__step3 .step__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 25px;
   height: 25px;
   color: white;
@@ -336,26 +359,10 @@ footer .footer-list {
   margin-left: -14px;
 }
 
-.functioning__list__step1 .step__number p, .functioning__list__step2 .step__number p, .functioning__list__step3 .step__number p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.functioning__list__step1 .icon, .functioning__list__step2 .icon, .functioning__list__step3 .icon {
-  margin-left: 20px;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 1.1em;
-}
-
-.functioning__list__step1 .step__step, .functioning__list__step2 .step__step, .functioning__list__step3 .step__step {
-  margin-left: 20px;
+.functioning__list__step1 .step__number p,
+.functioning__list__step2 .step__number p,
+.functioning__list__step3 .step__number p {
+  margin: 2px 0 0 8px;
 }
 
 .functioning__list__step1:hover,
@@ -384,6 +391,7 @@ footer .footer-list {
 }
 
 .restaurants__cards__palette-gout, .restaurants__cards__note-enchantee, .restaurants__cards__la-francaise, .restaurants__cards__delice-sens {
+  position: relative;
   border-radius: 15px;
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
@@ -438,6 +446,25 @@ footer .footer-list {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.35em;
+}
+
+.restaurant-new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
+  width: 100px;
+  background-color: #99E2D0;
+  color: #139273;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-new p {
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+  padding: 7px 0;
 }
 
 @media (max-width: 1920px) and (min-width: 600px) {
