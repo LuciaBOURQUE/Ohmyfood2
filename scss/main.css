@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/* Paramètres visuels des sections de la Homepage > Page Index */
+/* Paramètres visuels des cartes de restaurants > Page 1/2/3/4 */
+/* Paramètres visuels du composant "Bouton" */
+/* Paramètres visuels du composant 'Coeur' du type like/dislike */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -76,19 +81,21 @@ p {
 }
 
 .restaurant-infos .heart-clik i {
+  /* Like */
   cursor: pointer;
-  -webkit-text-stroke: 1px black;
   padding-top: 15px;
   font-size: 1.2em;
+  -webkit-text-stroke: 1px black;
   color: transparent;
   -webkit-background-clip: text;
 }
 
 .restaurant-infos input:checked ~ .heart-clik i {
+  /* Dislike */
   cursor: pointer;
-  -webkit-text-stroke: 1px #F6F6F6;
   padding-top: 15px;
   font-size: 1.2em;
+  -webkit-text-stroke: 1px #F6F6F6;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -597,10 +604,11 @@ footer .footer-list {
 }
 
 .cardlist__title .heart {
+  /* Like */
   cursor: pointer;
-  -webkit-text-stroke: 1px black;
   padding-top: 15px;
   font-size: 1.2em;
+  -webkit-text-stroke: 1px black;
   color: transparent;
   -webkit-background-clip: text;
   padding: 0 5% 0 0;

@@ -1,15 +1,15 @@
-// TYPOGRAPHIES
+// TYPOGRAPHIES INTERFACES
 $police: 'Roboto', sans-serif ;
 $policeShrikhand: 'Shrikhand', cursif ;
 
-// COULEURS
+// COULEURS INTERFACES
 $graybackground: #F6F6F6;
 $violetcolor: #9356DC;
 $pink: #FF79DA;
 $turquoise: #99E2D0;
 $degrade: -webkit-linear-gradient(-70deg, $pink, $violetcolor);
 
-// PARAMÈTRES SPÉCIFIQUES
+// PARAMÈTRES SPÉCIFIQUES COMPOSANTS
 $shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
 $radiustop: 15px 15px 0 0;
 $radiusbottom: 0 0 15px 15px;
