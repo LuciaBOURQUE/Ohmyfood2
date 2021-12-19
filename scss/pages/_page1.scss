@@ -143,7 +143,6 @@ $num-cards: 3;
 // ÉLABORATION DES MEDIA QUERIES
 @media (max-width:1920px) and (min-width:1000px) {
     .photo {
-        border: 1px solid green;
         height: 50%;
     }
     .cardlist {
