@@ -566,6 +566,10 @@ footer .footer-list {
   }
 }
 
+.photo {
+  height: 250px;
+}
+
 .cardlist {
   border-radius: 25px 25px 0 0;
   background-color: #F6F6F6;
@@ -817,6 +821,9 @@ p {
   }
   .cardlist__items__vert .check {
     font-size: 1.7em;
+  }
+  .cardlist__items:hover p {
+    width: 400px;
   }
 }
 /*# sourceMappingURL=main.css.map */

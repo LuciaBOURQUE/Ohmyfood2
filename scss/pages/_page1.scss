@@ -1,3 +1,7 @@
+// SECTION 1 - Image de Background
+.photo {
+    height: 250px;
+}
 // SECTION 2 - Carte du restaurant
 .cardlist {
     border-radius: 25px 25px 0 0;
@@ -172,6 +176,11 @@ $num-cards: 3;
     .cardlist__items__vert {
         .check {
             font-size: 1.7em;
+        }
+    }
+    .cardlist__items:hover  {
+        p {
+            width: 400px;
         }
     }
 }
