@@ -19,7 +19,7 @@ html {
 h1 {
   font-family: "Shrikhand", cursif;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 h2 {
@@ -49,7 +49,7 @@ h5 {
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 /* Bouton "Explorer nos restaurants" */
@@ -586,9 +586,10 @@ footer .footer-list {
           align-items: center;
 }
 
-.cardlist__title h1 {
+.cardlist__title__h1 {
   margin: 0;
   padding-left: 3%;
+  font-size: 1.8em;
 }
 
 .cardlist__title .heart {
@@ -671,7 +672,8 @@ footer .footer-list {
 }
 
 p {
-  width: 100%;
+  width: 80%;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   -webkit-transition: 1000ms;

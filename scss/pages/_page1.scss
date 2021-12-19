@@ -9,9 +9,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h1 {
+        &__h1 {
             margin: 0;
             padding-left: 3%;
+            font-size: 1.8em;
         }
         .heart {
             @include iconheart;
@@ -64,7 +65,8 @@
 }
 
 p {
-    width: 100%;
+    width: 80%;
+    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     transition: 1000ms;
