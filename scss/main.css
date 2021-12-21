@@ -794,14 +794,28 @@ p {
 
 @media (max-width: 1920px) and (min-width: 1000px) {
   .photo {
-    height: 50%;
+    padding-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .photo .restaurant-image {
+    border-radius: 15px;
+    width: 800px;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .cardlist {
+    margin-top: 150px;
     padding: 5% 3% 0 3%;
-    margin-top: -450px;
+    position: static;
   }
   .cardlist__title {
-    width: 350px;
+    width: 30%;
     padding-left: 20px;
   }
   .cardlist__section {
@@ -824,7 +838,7 @@ p {
 @media (max-width: 1000px) and (min-width: 500px) {
   .cardlist {
     padding: 5% 10% 2% 10%;
-    margin-top: -100px;
+    margin-top: 0px;
   }
   .cardlist__items__vert .check {
     font-size: 1.7em;
