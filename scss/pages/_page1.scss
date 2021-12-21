@@ -177,6 +177,9 @@ $num-cards: 3;
     }
 }
 @media (max-width:1000px) and (min-width:500px) {
+    .photo {
+        height: 300px;
+    }
     .cardlist {
         padding: 5% 10% 2% 10%;
         margin-top: 0px;
