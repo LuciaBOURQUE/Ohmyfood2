@@ -1,6 +1,7 @@
 // Animation "Loader-spinner" démarrage Home
 .preloader {
-    position: absolute;
+    z-index: 1;
+    position: fixed;
     flex-direction: column;
     display: flex;
     justify-content: center;

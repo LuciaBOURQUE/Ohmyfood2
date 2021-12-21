@@ -74,7 +74,7 @@ p {
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Icon coeur "on click" like/dislike */
+/* Icon coeur "On click" like/dislike */
 .restaurant-infos input {
   display: none;
   visibility: hidden;
@@ -199,7 +199,8 @@ footer .footer-list {
 }
 
 .preloader {
-  position: absolute;
+  z-index: 1;
+  position: fixed;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -815,7 +816,7 @@ p {
     position: static;
   }
   .cardlist__title {
-    width: 30%;
+    width: 35%;
     padding-left: 20px;
   }
   .cardlist__section {
