@@ -17,3 +17,57 @@
   display: flex;
   justify-content: center;
 }
+
+// Animation "Loader-spinner" démarrage Home
+.preloader {
+  z-index: 1;
+  position: fixed;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  color: $violetcolor;
+  font-size: 1.5em;
+  animation: loading-spinner 3000ms 200ms both;
+  p {
+      font-size: 0.8em;
+      text-align: center;
+      color: $violetcolor;
+      font-weight: 400;
+  }
+.loader {
+    animation: spinner 600ms linear infinite;
+  }
+}
+
+@keyframes loading-spinner {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 1;
+  }
+  80% {
+      opacity: 0.8;
+  }
+  98% {
+      opacity: 0.4;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0);
+  }
+}
+
+@keyframes spinner {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
