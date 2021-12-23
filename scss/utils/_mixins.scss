@@ -27,6 +27,11 @@
     box-shadow: $shadow;
 }
 
+@mixin buttonhover {
+    background: -webkit-linear-gradient(-70deg, rgba(255, 122, 217, 0.85), rgba(147, 86, 220, 0.85));
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
 /* Paramètres visuels du composant 'Coeur' du type like/dislike */
 @mixin iconheart { /* Like */
     cursor: pointer;

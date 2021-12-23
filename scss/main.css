@@ -74,6 +74,12 @@ p {
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
 }
 
+.exploration button:hover {
+  background: -webkit-linear-gradient(-70deg, rgba(255, 122, 217, 0.85), rgba(147, 86, 220, 0.85));
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
 /* Icon coeur "On click" like/dislike */
 .restaurant-infos input {
   display: none;
@@ -127,6 +133,12 @@ p {
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
   margin: 8% 0 0 0;
+}
+
+.cardlist__btn button:hover {
+  background: -webkit-linear-gradient(-70deg, rgba(255, 122, 217, 0.85), rgba(147, 86, 220, 0.85));
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .main-nav, .main-nav-card {

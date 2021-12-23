@@ -4,6 +4,9 @@
     button {
         @include button;
     }
+    button:hover {
+        @include buttonhover;
+    }
 }
 
 /* Icon coeur "On click" like/dislike */
@@ -29,5 +32,8 @@
     button {
         @include button;
         margin: 8% 0 0 0;
+    }
+    button:hover {
+        @include buttonhover;
     }
 }
